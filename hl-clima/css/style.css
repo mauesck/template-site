@@ -6709,7 +6709,9 @@ button.bg-primary:focus {
 }
 
 .bg-secondary {
-  background-color: white !important;
+  background-color: #425161 !important;
+  background-color: #28313b !important;
+  background-color: #fff !important;
 }
 
 a.bg-secondary:hover,
@@ -10796,7 +10798,7 @@ h6,
 
 .page-header {
   height: 400px;
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/header.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/produtos/1.png);
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
@@ -10874,11 +10876,27 @@ h6,
   list-style-type: none;
 }
 
-.carousel-indicators .active{
+.carousel-indicators .active {
   background-color: #007bff;
 }
 
-.footer{
- background-color: #333 !important;
- justify-content: ;
+.footer {
+  background-color: #28313b !important;
+}
+
+.logo {
+  width: 150px;
+}
+
+#wppLink{
+  position: fixed;
+  right: 0;
+  bottom: 100px;
+  color: #28a745;
+  font-size: 50px;
+  margin: 10px;
+}
+
+#wppLink:hover{
+  color: green;
 }

@@ -1,6 +1,6 @@
 (function ($) {
     "use strict";
-    
+
     // Dropdown on mouse hover
     $(document).ready(function () {
         function toggleNavbarMethod() {
@@ -17,8 +17,8 @@
         toggleNavbarMethod();
         $(window).resize(toggleNavbarMethod);
     });
-    
-    
+
+
     // Back to top button
     $(window).scroll(function () {
         if ($(this).scrollTop() > 100) {
@@ -28,7 +28,7 @@
         }
     });
     $('.back-to-top').click(function () {
-        $('html, body').animate({scrollTop: 0}, 1500, 'easeInOutExpo');
+        $('html, body').animate({ scrollTop: 0 }, 1500, 'easeInOutExpo');
         return false;
     });
 
@@ -49,17 +49,17 @@
         loop: true,
         margin: 30,
         responsive: {
-            0:{
-                items:1
+            0: {
+                items: 1
             },
-            576:{
-                items:1
+            576: {
+                items: 1
             },
-            768:{
-                items:2
+            768: {
+                items: 2
             },
-            992:{
-                items:3
+            992: {
+                items: 3
             }
         }
     });
@@ -73,17 +73,29 @@
         loop: true,
         margin: 30,
         responsive: {
-            0:{
-                items:1
+            0: {
+                items: 1
             },
-            576:{
-                items:1
+            576: {
+                items: 1
             },
-            768:{
-                items:2
+            768: {
+                items: 2
             }
         }
     });
-    
+
 })(jQuery);
 
+document.addEventListener('DOMContentLoaded', () => {
+    const a = document.createElement('a');
+    a.id = 'wppLink';
+    a.target = 'blank'
+    a.href = 'https://api.whatsapp.com/send?phone=5547984346216&text=Ol%C3%A1,%20vim%20pelo%20site';
+
+    const icon = document.createElement('i');
+    icon.classList = 'bi bi-whatsapp';    
+    a.appendChild(icon);
+
+    document.body.appendChild(a);
+});
